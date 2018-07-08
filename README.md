@@ -1,3 +1,3 @@
-# My_first_git
+# Game
 
-This is a picture pizzle game only in firefox,because of using cavnvas
+贪食蛇
