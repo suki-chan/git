@@ -18,7 +18,7 @@
             margin: 100px auto;
         }
 
-        #map i {
+        #map svg {
             width: 40px;
             height: 40px;
             /* background: pink; */
@@ -27,25 +27,24 @@
 
         #top {
             top: -40px;
-            color: rgb(161, 10, 10);
-
+            /* color: rgb(161, 10, 10); */
         }
 
         #bottom {
             bottom: -40px;
             left: 760px;
-            color: rgb(4, 48, 4);
+            /* color: rgb(4, 48, 4); */
         }
 
         #left {
             left: -40px;
-            top : 560px;
-            color: rgb(79, 190, 235);
+            top: 560px;
+            /* color: rgb(79, 190, 235); */
         }
 
         #right {
             right: -40px;
-            color: rgb(14, 9, 9);
+            /* color: rgb(14, 9, 9); */
         }
 
         input {
@@ -63,19 +62,21 @@
             transition: all .3s;
             outline-style: none;
         }
+
         .intro {
             position: relative;
             top: -680px;
-            left:24%;
+            left: 24%;
             width: 190px;
             height: 160px;
             font-size: 20px;
             border: 1px solid;
-            box-shadow: 0 0 5px 3px rgba(0, 0 ,0, .5);
+            box-shadow: 0 0 5px 3px rgba(0, 0, 0, .5);
             text-align: center;
             display: none;
 
         }
+
         input:hover {
             box-shadow: 0 0 5px 5px red;
             background-color: red;
@@ -114,24 +115,45 @@
             text-align: center;
             line-height: 40px;
         }
+
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
     </style>
 </head>
 
 <body>
     <div id="map">
-        <i class="iconfont" id="top">&#xe7a2;</i>
-        <i class="iconfont" id="bottom">&#xe7a2;</i>
-        <i class="iconfont" id="left">&#xe7a2;</i>
-        <i class="iconfont" id="right">&#xe7a2;</i>
+        <svg class="icon" aria-hidden="true" id="top">
+            <use xlink:href="#icon-she"></use>
+        </svg>
+        <svg class="icon" aria-hidden="true" id="bottom">
+            <use xlink:href="#icon-she"></use>
+        </svg>
+        <svg class="icon" aria-hidden="true" id="left">
+            <use xlink:href="#icon-she"></use>
+        </svg>
+        <svg class="icon" aria-hidden="true" id="right">
+            <use xlink:href="#icon-she"></use>
+        </svg>
+
     </div>
     <input type="button" id="test" value="开始">
-    <div class="intro"><br><b>贪吃爷</b><br><br>一款令人上瘾的游戏</div>
+    <div class="intro">
+        <br>
+        <b>贪吃爷</b>
+        <br>
+        <br>一款令人上瘾的游戏</div>
     <script src="./js/animate.js"></script>
     <script src="./js/food.js"></script>
     <script src="./js/snake.js"></script>
     <script src="./js/game.js"></script>
     <script src="./js/index.js"></script>
-
+    <script src="./font/iconfont.js"></script>
 </body>
 
 </html>
