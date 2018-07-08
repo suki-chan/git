@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>file</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #map {
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+            position: relative;
+            margin: 100px auto;
+        }
+
+        #map i {
+            width: 40px;
+            height: 40px;
+            /* background: pink; */
+            position: absolute;
+        }
+
+        #top {
+            top: -40px;
+            color: rgb(161, 10, 10);
+
+        }
+
+        #bottom {
+            bottom: -40px;
+            left: 760px;
+            color: rgb(4, 48, 4);
+        }
+
+        #left {
+            left: -40px;
+            top : 560px;
+            color: rgb(79, 190, 235);
+        }
+
+        #right {
+            right: -40px;
+            color: rgb(14, 9, 9);
+        }
+
+        input {
+            width: 80px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid;
+            position: relative;
+            background-color: transparent;
+            top: -500px;
+            left: 20%;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .3s;
+            outline-style: none;
+        }
+        .intro {
+            position: relative;
+            top: -680px;
+            left:24%;
+            width: 190px;
+            height: 160px;
+            font-size: 20px;
+            border: 1px solid;
+            box-shadow: 0 0 5px 3px rgba(0, 0 ,0, .5);
+            text-align: center;
+            display: none;
+
+        }
+        input:hover {
+            box-shadow: 0 0 5px 5px red;
+            background-color: red;
+            color: aliceblue;
+            border: none;
+        }
+
+        @font-face {
+            font-family: 'iconfont';
+            src: url('./font/iconfont.eot');
+            src: url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+            url('./font/iconfont.woff') format('woff'),
+            url('./font/iconfont.ttf') format('truetype'),
+            url('./font/iconfont.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: 'iconfont';
+            font-size: 59px;
+            color: brown;
+            text-indent: -9px;
+            line-height: 33px;
+
+        }
+
+        .img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+        }
+
+        .second,
+        .third {
+            font-weight: 600;
+            font-size: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map">
+        <i class="iconfont" id="top">&#xe7a2;</i>
+        <i class="iconfont" id="bottom">&#xe7a2;</i>
+        <i class="iconfont" id="left">&#xe7a2;</i>
+        <i class="iconfont" id="right">&#xe7a2;</i>
+    </div>
+    <input type="button" id="test" value="开始">
+    <div class="intro"><br><b>贪吃爷</b><br><br>一款令人上瘾的游戏</div>
+    <script src="./js/animate.js"></script>
+    <script src="./js/food.js"></script>
+    <script src="./js/snake.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
