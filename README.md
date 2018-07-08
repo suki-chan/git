@@ -1,3 +1,3 @@
-# My_first_git
+# Pizzle Game
 
-This is a picture pizzle game only in firefox,because of using cavnvas
+This game only can play in firefox,because of using cavnvas
